@@ -1,12 +1,32 @@
 .section {
-	padding: 8rem 10rem;
+	padding: 2rem 2rem;
 	&.main {
-		padding: 5rem 7rem;
+		padding: 2rem 2rem;
 	}
+}
+
+// .section {
+// 	padding: 8rem 10rem;
+// 	&.main {
+// 		padding: 5rem 7rem;
+// 	}
+// }
+
+.grid {
+	display: grid;
+	gap: 2rem;
+}
+
+.container {
+	min-height: 70vh;
 }
 
 // Buttons
 
 .btn__blue {
 	background: $blue;
+}
+
+.btn__red {
+	background: $red;
 }

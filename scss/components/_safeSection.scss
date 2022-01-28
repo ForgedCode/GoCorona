@@ -1,0 +1,50 @@
+.safe {
+	.safe__container {
+		.app-img__container {
+			justify-self: center;
+			position: relative;
+
+			.square {
+				position: absolute;
+				width: 77px;
+				height: 77px;
+				border-radius: 30px;
+				background: $red;
+				z-index: -1;
+
+				&.big {
+					top: 0;
+					left: -30%;
+					width: 147px;
+					height: 147px;
+				}
+
+				&:nth-of-type(2) {
+					bottom: 10%;
+					left: -50%;
+				}
+
+				&:nth-of-type(3) {
+					bottom: 50%;
+					right: -50%;
+				}
+			}
+
+			img {
+				width: 150px;
+			}
+		}
+
+		.safe__info {
+			.info__container {
+				p {
+					margin-top: 1rem;
+				}
+			}
+
+			.btn__container {
+				margin-top: 2rem;
+			}
+		}
+	}
+}

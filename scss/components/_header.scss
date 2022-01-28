@@ -1,12 +1,17 @@
 header {
 	width: 100%;
 	height: $headerHeight;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: $whiteBg;
 	padding: 1rem 2rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	font-family: $raleway;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	z-index: 99;
 
 	.btn__container {
 		display: none;
@@ -56,6 +61,7 @@ header {
 			justify-content: space-evenly;
 			align-items: center;
 			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+			background: $whiteBg;
 			transition: $transition;
 
 			&.show {
