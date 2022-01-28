@@ -1,0 +1,12 @@
+.section {
+	padding: 8rem 10rem;
+	&.main {
+		padding: 5rem 7rem;
+	}
+}
+
+// Buttons
+
+.btn__blue {
+	background: $blue;
+}

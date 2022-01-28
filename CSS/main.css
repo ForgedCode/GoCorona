@@ -1,1 +1,99 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Rubik:wght@300;400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Rubik", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+ul {
+  list-style: none; }
+
+button {
+  width: 14rem;
+  height: 4rem;
+  color: #fcfdfe;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem; }
+
+p {
+  font-size: 1.2rem; }
+
+.section {
+  padding: 8rem 10rem; }
+  .section.main {
+    padding: 5rem 7rem; }
+
+.btn__blue {
+  background: #4285f4; }
+
+header {
+  width: 100%;
+  height: 8rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); }
+  header .btn__container {
+    display: none; }
+  header .burger-menu {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    transition: all 0.5s ease-in; }
+    header .burger-menu .line {
+      background: #ec5863;
+      width: 100%;
+      height: 5px;
+      margin-bottom: 0.5rem;
+      transition: all 0.5s ease-in; }
+    header .burger-menu.show .line:nth-of-type(1) {
+      transform: rotate(45deg) translate(9px, 9px); }
+    header .burger-menu.show .line:nth-of-type(2) {
+      opacity: 0; }
+    header .burger-menu.show .line:nth-of-type(3) {
+      transform: rotate(-45deg) translate(6px, -5px); }
+  header nav {
+    display: flex; }
+    header nav .nav__menu {
+      position: fixed;
+      top: 8rem;
+      left: -100%;
+      width: 100%;
+      height: 70vh;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      transition: all 0.5s ease-in; }
+      header nav .nav__menu.show {
+        left: 0; }
+      header nav .nav__menu .nav__list {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; }
+        header nav .nav__menu .nav__list .nav__item {
+          font-weight: 700;
+          font-size: 1.2rem;
+          text-transform: uppercase; }

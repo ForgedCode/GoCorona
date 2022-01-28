@@ -1,0 +1,22 @@
+{
+	"name": "gocorona",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"sass": "node-sass -w scss/ -o css/ --recursive"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ForgedCode/GoCorona.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ForgedCode/GoCorona/issues"
+	},
+	"homepage": "https://github.com/ForgedCode/GoCorona#readme",
+	"dependencies": {
+		"node-sass": "^7.0.1"
+	}
+}
