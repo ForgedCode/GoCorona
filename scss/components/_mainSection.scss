@@ -1,14 +1,14 @@
 .main {
 	margin-top: $headerHeight;
 	position: relative;
-
-	.rectangle {
-		display: none;
-	}
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
 	.video__container {
-		margin-top: 2rem;
 		width: 22.5rem;
+		margin-top: 2rem;
 		height: 5rem;
 		display: flex;
 		align-items: center;
@@ -48,12 +48,14 @@
 
 	.img__container {
 		align-self: center;
+		z-index: 10;
+
+		svg {
+			max-width: 75rem;
+		}
 	}
 
-	@media screen and (min-width: 700px) {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: none;
-
+	@media screen and (min-width: 1200px) {
 		.img__container {
 			order: 1;
 		}

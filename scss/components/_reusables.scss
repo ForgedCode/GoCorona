@@ -1,24 +1,29 @@
 .section {
-	padding: 2rem 2rem;
+	min-height: 100vh;
+	padding: 5rem 2rem;
 	&.main {
 		padding: 2rem 2rem;
 	}
 }
 
-// .section {
-// 	padding: 8rem 10rem;
-// 	&.main {
-// 		padding: 5rem 7rem;
-// 	}
-// }
+@media screen and (min-width: 1200px) {
+	.section {
+		padding: 8rem 10rem;
+		&.main {
+			padding: 5rem 7rem;
+		}
+	}
+}
 
 .grid {
 	display: grid;
 	gap: 2rem;
-}
-
-.container {
 	min-height: 70vh;
+	align-items: center;
+
+	@media screen and (min-width: 1200px) {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 // Buttons

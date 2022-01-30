@@ -1,0 +1,34 @@
+.rectangle {
+	position: absolute;
+	width: 6.5rem;
+	height: 6.5rem;
+	background: $red;
+	border-radius: 15px;
+	z-index: -1;
+
+	&.md {
+		width: 9.6rem;
+		height: 9.6rem;
+		border-radius: 30px;
+	}
+
+	&.big {
+		width: 12.7rem;
+		height: 12.7rem;
+		border-radius: 30px;
+	}
+}
+
+.side-rectangle {
+	display: none;
+	@media screen and (min-width: 1200px) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 27%;
+		height: 100vh;
+		background: $red;
+		border-radius: 30px 0px 0px 30px;
+	}
+}

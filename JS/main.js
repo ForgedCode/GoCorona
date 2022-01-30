@@ -12,3 +12,14 @@ burgerMenu.addEventListener("click", () => {
 		navMenu.classList.add("show");
 	}
 });
+
+const headerBg = () => {
+	const header = document.getElementById("header");
+	if (this.scrollY > 10) {
+		header.classList.add("header-white");
+	} else {
+		header.classList.remove("header-white");
+	}
+};
+
+window.addEventListener("scroll", headerBg);

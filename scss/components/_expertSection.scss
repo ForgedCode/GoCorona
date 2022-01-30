@@ -1,0 +1,137 @@
+.experts {
+	.experts__container {
+		grid-template-columns: 1fr;
+		align-content: space-between;
+		min-height: 85vh;
+
+		.statistics {
+			justify-self: center;
+			position: relative;
+			max-width: 65rem;
+			width: 100%;
+			min-height: 12rem;
+			background: #ffffff;
+			padding: 1rem 3rem;
+			box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+			border-radius: 15px;
+			display: flex;
+			align-items: center;
+
+			.stats__container {
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+				align-items: center;
+				flex-direction: column;
+				gap: 1rem;
+
+				@media screen and (min-width: 767px) {
+					flex-direction: row;
+				}
+
+				> div {
+					text-align: center;
+				}
+			}
+
+			.rectangle {
+				transform: rotate(-30deg);
+				bottom: -30%;
+				left: 0;
+
+				&.md {
+					transform: rotate(105deg);
+					top: -30%;
+					left: 30%;
+				}
+
+				&.big {
+					transform: rotate(-30deg);
+					left: 55%;
+					top: 50%;
+				}
+
+				@media screen and (min-width: 1200px) {
+					transform: rotate(-30deg);
+					bottom: -25%;
+					left: -4%;
+
+					&.md {
+						transform: rotate(105deg);
+						top: -30%;
+						left: 35%;
+					}
+
+					&.big {
+						transform: rotate(-30deg);
+						left: 90%;
+						top: 0;
+					}
+				}
+			}
+
+			h3 {
+				color: $red;
+				font-size: 2.6rem;
+				font-weight: bold;
+				letter-spacing: 0.37rem;
+			}
+
+			p {
+				color: $black;
+				font-size: 0.9rem;
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: 0.37rem;
+			}
+
+			@media screen and (min-width: 1200px) {
+				p {
+					font-size: 1.1rem;
+				}
+			}
+		}
+
+		.info__container {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			gap: 5rem;
+
+			@media screen and (min-width: 1200px) {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.expert__info {
+				@media screen and (min-width: 1200px) {
+					width: 50rem;
+				}
+			}
+
+			span {
+				color: $blue;
+			}
+
+			.info {
+				margin-bottom: 2.4rem;
+			}
+
+			h2 {
+				margin-bottom: 1.2rem;
+			}
+
+			.img__container {
+				order: -1;
+
+				img {
+					width: 84rem;
+				}
+
+				@media screen and (min-width: 1200px) {
+					order: 2;
+				}
+			}
+		}
+	}
+}

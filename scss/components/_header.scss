@@ -12,9 +12,25 @@ header {
 	font-family: $raleway;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 	z-index: 99;
+	transition: $transition;
+
+	&.header-white {
+		background: $white;
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 3.7rem 4.3rem 3.7rem 5.2rem;
+		box-shadow: none;
+		background: transparent;
+	}
 
 	.btn__container {
 		display: none;
+
+		@media screen and (min-width: 1200px) {
+			display: block;
+		}
 	}
 
 	.burger-menu {
@@ -22,6 +38,10 @@ header {
 		height: 3rem;
 		position: relative;
 		transition: $transition;
+
+		@media screen and (min-width: 1200px) {
+			display: none;
+		}
 
 		.line {
 			background: $red;
@@ -48,6 +68,8 @@ header {
 
 	nav {
 		display: flex;
+		justify-content: space-between;
+		flex-basis: 70%;
 
 		.nav__menu {
 			position: fixed;
@@ -64,6 +86,20 @@ header {
 			background: $whiteBg;
 			transition: $transition;
 
+			@media screen and (min-width: 1200px) {
+				position: static;
+				flex-direction: row;
+				background: transparent;
+				height: auto;
+				box-shadow: none;
+				width: auto;
+				padding: 0;
+
+				.btn__container-nav {
+					display: none;
+				}
+			}
+
 			&.show {
 				left: 0;
 			}
@@ -75,10 +111,17 @@ header {
 				justify-content: space-evenly;
 				align-items: center;
 
+				@media screen and (min-width: 1200px) {
+					flex-direction: row;
+					gap: 4rem;
+					height: auto;
+				}
+
 				.nav__item {
 					font-weight: 700;
 					font-size: 1.2rem;
 					text-transform: uppercase;
+					letter-spacing: 0.14rem;
 				}
 			}
 		}

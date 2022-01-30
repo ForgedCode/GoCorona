@@ -35,8 +35,9 @@ button {
 	text-transform: uppercase;
 	font-family: $raleway;
 	font-weight: 800;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	cursor: pointer;
+	letter-spacing: 0.14rem;
 }
 
 p {
@@ -66,4 +67,20 @@ h2 {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+@media screen and (min-width: 1200px) {
+	h1 {
+		font-size: 8.4rem;
+		line-height: 126%;
+	}
+
+	p {
+		font-size: 1.6rem;
+		line-height: 138.5%;
+	}
+
+	h2 {
+		font-size: 5.4rem;
+	}
 }
