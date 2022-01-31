@@ -36,6 +36,13 @@
 }
 
 .main__container {
+	@media screen and (min-width: 481px) {
+		grid-template-columns: 1fr 1fr;
+
+		.img__container {
+			order: 1;
+		}
+	}
 	.main__info {
 		p {
 			margin-top: 1rem;
@@ -52,12 +59,10 @@
 
 		svg {
 			max-width: 75rem;
-		}
-	}
 
-	@media screen and (min-width: 1200px) {
-		.img__container {
-			order: 1;
+			@media screen and (max-width: 1199px) {
+				max-width: 54rem;
+			}
 		}
 	}
 }

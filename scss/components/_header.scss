@@ -71,6 +71,18 @@ header {
 		justify-content: space-between;
 		flex-basis: 70%;
 
+		.logo__container {
+			a {
+				img {
+					transition: $transition;
+				}
+
+				&:hover > img {
+					transform: scale(1.2);
+				}
+			}
+		}
+
 		.nav__menu {
 			position: fixed;
 			top: $headerHeight;
@@ -122,6 +134,27 @@ header {
 					font-size: 1.2rem;
 					text-transform: uppercase;
 					letter-spacing: 0.14rem;
+
+					a {
+						position: relative;
+						&::after {
+							content: "";
+							position: absolute;
+							bottom: -30%;
+							left: 0;
+							width: 100%;
+							height: 3px;
+							background: $black;
+							transform: scaleX(0);
+							transform-origin: right;
+							transition: transform 0.3s ease-in;
+						}
+
+						&:hover::after {
+							transform: scaleX(1);
+							transform-origin: left;
+						}
+					}
 				}
 			}
 		}

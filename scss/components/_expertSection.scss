@@ -4,6 +4,10 @@
 		align-content: space-between;
 		min-height: 85vh;
 
+		@media screen and (min-width: 1200px) {
+			align-content: space-around;
+		}
+
 		.statistics {
 			justify-self: center;
 			position: relative;
